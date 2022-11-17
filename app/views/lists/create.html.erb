@@ -1,6 +1,6 @@
-<%= form_with model: @list do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.submit %>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.association :bookmark %>
+  
+  <%= f.button :submit %>
 <% end %>

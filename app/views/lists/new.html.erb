@@ -1,6 +1,9 @@
-<%= form_with model: @list do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<div class="container">
+<h1>Create a list</h1>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.association :bookmark %>
   
-  <%= f.submit %>
+  <%= f.submit "Create a list", class: "btn btn-primary" %>
 <% end %>
+</div>
