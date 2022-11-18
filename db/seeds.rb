@@ -17,4 +17,4 @@ movie_4 = Movie.create!(title: "Ocean's Eight", overview: "Debbie Ocean, a crimi
 list = List.create!(name: 'New liste')
 
 Bookmark.create!(comment: 'the best new list', movie: movie_1, list: list)
-Bookmark.create!(comment: 'the best', movie: movie_2, list: list)
+Bookmark.create!(comment: 'the best', movie: movie_2, list: list )
